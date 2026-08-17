@@ -5,9 +5,9 @@ def get_pending_customers():
     cursor = conn.cursor()
     
     # Task: Select customer email and order_date where status is 'Pending'.
-    query = """
-    -- WRITE YOUR SQL HERE
-    """
+    query = Select email,Orders.order_date where Orders.status == 'Pending';
+
+    
     
     cursor.execute(query)
     return cursor.fetchall()
