@@ -4,7 +4,18 @@
 
 def count_categories(categories):
     # TODO: Write your logic here
-    pass
+    if not categories:
+        return "empty list"
+    
+    seen = {}
+    for i in range(len(categories)):
+        if categories[i] not in seen:
+            seen[i] = categories[i]
+        else:
+            seen[categorie[i]] += 1
+    return seen
+
+    #we can use hashmap to complete the solution : time complexity: O(n),space complexity : O(n)
 
 # Test Case
 data = ['Brakes', 'Engine', 'Brakes', 'Tools', 'Engine', 'Brakes']
