@@ -17,6 +17,10 @@ def format_sku(sku_string):
 
     return ''.join(result)
 
+# we can use one loop - O(n) - time complexity. lower - we cna use .lower() or .upper()
+ #for upper case
+
+# or we cna use ord(stirng_character) >=65 and  <= 90. we can keep upper. and ord() 122 to 148 can use lowercase
 
 
 
