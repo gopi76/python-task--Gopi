@@ -7,6 +7,18 @@ def calculate_discount(price, discount_percent):
     or if inputs are strings/None. Return 0 for invalid inputs.
     """
     # TODO: Implement logic
+    #temp = str(discount_percent)
+    
+    if discount_percent == 0:
+        return 0
+    
+    if dtype(discount_percent) == "string":
+        return "discount should not be string"
+
+    #we can use type of the variable based on that we can write a condition to handle for the strings
+    
+    
+    # we can use try and except concept also
     
 
 # Test Case
