@@ -4,7 +4,9 @@
 
 def is_banned(email, banned_list):
     # TODO: Implement the search logic
-    pass
+
+    # we can use regex, best approach is this so far i know by uing .findall 
+    
 
 # Test
 banned = ["user1@test.com", "user2@test.com"] # Pretend this is 10k items
